@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity =0.6.12;
 
-import '@venomswap/core/contracts/interfaces/IUniswapV2Pair.sol';
+import '@howlswap/core/contracts/interfaces/IUniswapV2Pair.sol';
 
 import "./SafeMath.sol";
 
@@ -22,7 +22,7 @@ library UniswapV2Library {
                 hex'ff',
                 factory,
                 keccak256(abi.encodePacked(token0, token1)),
-                hex'162f79e638367cd45a118c778971dfd8d96c625d2798d3b71994b035cfe9b6dc' // init code hash
+                hex'0x901a26f60e886b78a573e5df2019039c1e06b7e3debdfe7c79aedccc935040ad' // init code hash
             ))));
     }
 
